@@ -1,43 +1,194 @@
-header a{
-  margin-left: 5px;
-  color: lightgreen;
+* {
+  margin: 0;
+  padding: 0;
 }
-@media screen and (min-width:590px){
-  header a{
-    margin-left: 5%;
+body {
+  min-height: 100vh;
+}
+/*@font-face {
+  src: url('Tangerine-Regular.ttf');
+  font-family: Tangerine;
+}*/
+header {
+  background: linear-gradient(-45deg, teal, hsl(171, 100%, 41%));
+  min-height: 90vh;
+}
+@media screen and (min-width: 600px) {
+  header {
+    min-height: 30vh;
   }
 }
-h5.heading{
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2.5em;
-  text-decoration: underline;
-  text-decoration-color: hsl(171, 100%, 41%);
-  letter-spacing: 4px
-}
-
-main{
+.header-inner-div {
+  width: 100%;
+  height: 100%;
   display: flex;
-  text-align: center;
-}
-article{
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #364d5fff;
-}
-footer{
-  color: hsl(171, 100%, 41%);
-  width: 100vw;
-  height: 40px;
-  padding-left: auto;
-  padding-right: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: bolder;
-  letter-spacing: 3px;
 }
-#btm-a{
+.header-under {
+  width: 100%;
+  background: linear-gradient(-45deg, teal, hsl(171, 100%, 41%));
+  min-height: 50px;
+  clip-path: ellipse(50% 100% at top center);
+}
+.img-bg {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff5;
+  border-radius: 50%;
+  margin-bottom: 20px;;
+}
+.img-bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.tangerine {
+  font-family: tangerine;
+}
+.name-first, .name-second {
+  font-weight: bold;
+  font-size: 5rem;
+  font-family: tangerine;
+  color: white;
+}
+.name-first {
+  padding-right: 20px;
+}
+.name-second {
+  padding-left: 6px;
+  color: #444;
+}
+.circle-btn {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: white;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  color: hsl(171, 100%, 41%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.main-img-container {
+  width: 95%;
+  max-width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-img-container img {
+  height: 130px;
+  width: 130px;
+}
+.content-container {
+  flex-wrap: wrap;
+  padding: 10px;
+  text-align: center;
+  color: #364d5f;
+}
+.welcome {
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  color: hsl(171, 100%, 41%);
   margin-top: 10px;
+}
+.floating-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  opacity: .8;
+  background: linear-gradient(-45deg, teal, hsl(161, 100%, 41%));
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+}
+.linbg {
+  background: linear-gradient(-45deg, teal, hsl(171, 100%, 41%));
+}
+section.mid {
+  min-width: 100vw;
+  min-height: 150px;
+  text-salign: center;
+  color: white;
+  padding: 5px 0px 5px 0px;
+}
+section.mid > .title {
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+.mid ul {
+  font-size: .9em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+.mid li {
+  padding: 5px;
+}
+footer {
+  width: 100vw;
+  min-height: 250px;
+  text-align: center;
+  color: white;
+}
+footer * {
+  padding: 5px 0 5px 0;
+}
+footer div:nth-child(2) {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+footer a {
+  text-decoration: underline 1px white;
+  color: white;
+}
+.footer-header {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+.button-flat {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  outline-color: teal;
+  outline-offset: 2px;
+  outline-width: 1px;
+  border: solid 1px hsl(171, 100%, 41%);
+  width: 80px;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+.other {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.other-links {
+  font-size: 2.8rem;
+  font-weight: bold;
 }

@@ -20,7 +20,8 @@ def get_hash_string_SHA256(string):
 
 
 def home(request):
-	return render(request,'index.html', {})
+  print("test")
+  return render(request,'index.html', {})
 
 def view_note(request, temp_key, note_num):
 	#:URL: notes/<str:temp_key>/<int:note_num>
@@ -44,7 +45,8 @@ def view_note(request, temp_key, note_num):
 		'title': note.title,
 		'content': note.content,
 		'date': f'{months[note.date_created.month-1].title()} {note.date_created.day}, {note.date_created.year}',
-		'time': f'{hour}:{minute}'
+		'time': f'{hour}:{minute}',
+		'title_short': note.title[:7]
 	}
 	tk.used = tk.used + 1
 	tk.save()

@@ -3,29 +3,70 @@
   <head>
     {%load static%}
     <link rel="stylesheet" href="{%static 'css/bulma.min.css' %}" type="text/css" media="all" />
+    <link rel="icon" href="{%static 'icon.png'%}" type="image/png" />
     <link rel="stylesheet" href="{%static 'iconfont/material-icons.css' %}" type="text/css" media="all" />
+    <style>
+      @font-face {
+        src: url('{%static "css/Tangerine-Regular.ttf"%}');
+        font-family: Tangerine;
+      }
+    </style>
+    <!--link rel="stylesheet" href="{%static 'css/general.css' %}" type="text/css" media="allall-->
     <link rel="stylesheet" href="{%static 'css/style.css' %}" type="text/css" media="all" />
-    <link rel="stylesheet" href="{%static 'css/general.css' %}" type="text/css" media="all" />
     <meta name="viewport" content="width=device-width,height=device-height">
     <title>Notes</title>
   </head>
   <body>
     <header>
-      <a href="{%url 'create' %}" class="button is-primary is-outlined is-small"><i class="material-icons">create</i><i>Create</i></a>
+      <div class="header-inner-div">
+        <div class="img-bg">
+          <img src="{%static 'images/QNlogo.png' %}">
+        </div>
+        <p class="name-first">Quick</p>
+        <p class="name-second">Notes</p>
+      </div>
+      <a class="circle-btn" href="{%url 'create'%}"><i class="material-icons">add</i></a>
+      <div style="text-align:center; color:white">
+        <h3>Easy and quick</h3>
+        <h4>notes keeping.</h4>
+      </div>
     </header>
-    <h5 class="heading tangerine green-text">
-      Notes
-    </h5>
+    <div class="header-under"></div>
     <main>
-      <article>
-        <p>Ever had that idea come to you suddenly and you are not close to a pen and a paper to write it down; wanted to write down an important detail before you forget?</p>
-        <p>Well if you're here already, then you have come to the right place!</p>
-        <p>All you need to do is click the button below to start writing a note without the need for a signup or a login . Each note can be created and stored in a folder which can either be password-protected or open to all.</p>
-        <p><b>So get started!</b></p>
-      </article>
+      <span class="tangerine welcome">Welcome!</span>
+      <!--div class="main-img-container">
+        <img src="18915856.jpg" width="100%" height="100%">
+      </div>-->
+      <div class='content-container'>
+        <p>Ever had an idea or a thought pop up in your mind suddenly? You may need to write that down quickly else you forget. But what if you don't have a pen and a paper to do so? Now that's where Quick Notes come in! </p>
+        <p>You have definitely come to the right place.</p>
+      </div>
+      <section class="mid linbg">
+        <div class="tangerine title">Features</div>
+        <ul>
+          <li>• Quick creation of notes anonymously.</li>
+          <li>• Tired of signups and logins? No signup nor login required.</li>
+          <li>• Set unique passwords for each note you create or create without a password for general viewing.</li>
+        </ul>
+      </section>
+      <br/>
+      <div class="other">
+        <p>Let's get started!</p>
+        <a class="button-flat linbg" href="{%url 'create'%}"><i class="material-icons">add</i><span>Create</span></a>
+      </div>
+      <button class="floating-btn"><a class="material-icons" href="{%url 'create'%}">add</a></button>
+      <br/>
     </main>
-    <a class="button is-primary is-outlined is-small" id="btm-a" href="{%url 'create' %}" ><i class="material-icons">create</i><p>Start writing notes</p>
-    </a>
-    <footer class="tangerine">By Francis A.</footer>
-    </body>
+    <footer class="linbg">
+      <div class="footer-header tangerine">Contact Me</div>
+      <div>By Francis Ali</div>
+      <ul>
+        <li>Mail: <a href="mailto:francisali693@gmail.com">francisali693@gmail.com</a></li>
+        <li>Tel: <a href="tel:+2347011477728">+2347011477728</a></li>
+        <li class="other-links tangerine">Social Media</li>
+        <li>LinkedIn: <a href="www.linkedin.com/in/francis-ali-b95880190">www.linkedin.com/in/francis-ali-b95880190</a></li>
+      </ul>
+      <br/>
+    </footer>
+  </body>
 </html>
