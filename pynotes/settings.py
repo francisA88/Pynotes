@@ -25,7 +25,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', "simplenotes.up.railway.app"]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', "simplenotes.up.railway.app", ".up.railway.app"]
 
 
 # Application definition
