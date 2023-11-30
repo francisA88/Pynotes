@@ -23,10 +23,9 @@ print(BASE_DIR)
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', "simplenotes.up.railway.app", ".up.railway.app", 
-                os.getenv('DOMAIN_NAME')]
+ALLOWED_HOSTS = [ '.onrender.com' ]#os.getenv('DOMAIN_NAME')]
 
 
 # Application definition
